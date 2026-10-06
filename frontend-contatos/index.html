@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Lista de Contatos📞</title>
+</head>
+<body>
+    <h1>Lista de Contatos📞</h1>
+
+    <section class="filtros">
+        <h2>Filtrar Contatos</h2>
+        <input type="text" id="filtro-nome" placeholder="Nome">
+        <input type="text" id="filtro-cidade" placeholder="Cidade">
+        <button id="btn-filtrar">Buscar</button>
+        <button id="btn-limpar-filtro">Limpar</button>
+    </section>
+
+    <section class="candastro-telefone">
+        <h2 id="cadastro-form">Cadastrar telefone</h2>
+        <form id="form-jogo">
+            <input type="hidden" id="telefone-id">
+            <input type="text" id="cadastro-nome" placeholder="Nome" required>
+            <input type="text" id="cadastro-telefone" placeholder="Telefone" required>
+            <input type="text" id="cadastro-email" placeholder="Email">
+            <input type="text" id="cadastro-cidade" placeholder="Cidade" required>
+            <button type="submit">Salvar</button>
+            <button type="button" id="btn-cancelar">Cancelar</button>
+        </form>
+  </section>
+
+    <section class="tabela-contatos">
+    <h2>Jogos cadastrados</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nome</th><th>Telefone</th><th>Email</th><th>Cidade</th><th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="lista-contatos"></tbody>
+    </table>
+  </section>
+    
+    <script src="script.js" ></script>
+</body>
+</html>
